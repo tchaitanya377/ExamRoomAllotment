@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List</title>
+</head>
+<body>
+    <h1>Students List</h1>
+    <ul>
+        {% for data in data %}
+            {{ data.roll_Number }}
+            {{ data.Name }}
+            {{ data.branch }}
+            {{ data.year }}
+
+        {% endfor %}
+    </ul>
+</body>
+</html>

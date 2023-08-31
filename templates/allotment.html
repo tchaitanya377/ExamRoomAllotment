@@ -1,0 +1,30 @@
+<!-- templates/allotment.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Allotment</title>
+</head>
+<body>
+    <h1>Room Allotment</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Branch</th>
+                <th>Year</th>
+                <th>Room Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for roll_number, branch, year, room_number in rooms %}
+            <tr>
+                <td>{{ roll_number }}</td>
+                <td>{{ branch }}</td>
+                <td>{{ year }}</td>
+                <td>{{ room_number }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
